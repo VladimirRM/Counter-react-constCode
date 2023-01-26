@@ -3,23 +3,24 @@ import React, { useState } from "react";
 const App = () => {
   const [counters, setCounters] = useState([0, 0, 0]);
 
-  const count = (n) => {
+  const counter = (number) => {
     setCounters(
-      counters.map((v, i) => {
-        if (n === i) {
-          return v + 1;
+      counters.map((item, index) => {
+        if (number === index) {
+          return item + 1;
         }
-        return v;
+        return item;
       })
     );
   };
   return (
     <div>
       <ul>
-        {[0, 1, 2].map((v) => (
-          <li key={v}>
-            <button onClick={() => count(v)}>
-              you pressed me {counters[v]} times
+        {[0, 1, 2].map((item) => (
+          <li key={item}>
+            <button onClick={() => counter(item)}>
+              {" "}
+              You pressed me{counters[item]} times
             </button>
           </li>
         ))}
