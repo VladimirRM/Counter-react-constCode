@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 const App = () => {
   const [counters, setCounters] = useState([0, 0, 0]);
+
   const counter = (number) => {
     setCounters(
       counters.map((item, index) => {
@@ -12,14 +13,13 @@ const App = () => {
       })
     );
   };
-
   return (
     <div>
       <ul>
         {[0, 1, 2].map((item) => (
           <li key={item}>
             <button onClick={() => counter(item)}>
-              You pressed me {counters[item]}times
+              You pushing me {counters[item]}
             </button>
           </li>
         ))}
