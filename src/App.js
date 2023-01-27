@@ -16,7 +16,7 @@ const App = () => {
   return <div>
 
     <ul>
-        {[0,1,2].map(item=>(<li>
+        {[0,1,2].map(item=>(<li key={item}>
             <button onClick={()=>counter(item)}> You pushing me {counters[item]} times </button>
 
         </li>))}
