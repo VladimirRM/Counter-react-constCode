@@ -7,7 +7,7 @@ const App = () => {
     setCounters(
       counters.map((item, index) => {
         if (number === index) {
-          return item + 1;
+          return item +    1;
         }
         return item;
       })
