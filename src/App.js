@@ -14,8 +14,12 @@ const App = () => {
     );
   };
   return <div>
-    
+    <ul>
+      {[0,1,2].map(item=>(
                  <button onClick={()=>counter(item)}>You pressed me {counters[item]} times</button>
+
+      ))}
+    </ul>
 
   </div>;
 };
