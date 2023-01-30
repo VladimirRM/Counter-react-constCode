@@ -13,7 +13,11 @@ const App = () => {
       })
     );
   };
-  return <div></div>;
+  return <div>
+    
+                 <button onClick={()=>counter(item)}>You pressed me {counters[item]} times</button>
+
+  </div>;
 };
 
 export default App;
