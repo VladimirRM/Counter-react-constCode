@@ -14,7 +14,9 @@ const App = () => {
 
   return (
     <div>
-      <button on>You pushing me {counters[item]} times</button>
+
+      
+      <button on onClick={()=>counter(item)}>You pushing me {counters[item]} times</button>
     </div>
   )
 }
